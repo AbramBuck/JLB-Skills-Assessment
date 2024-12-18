@@ -143,7 +143,7 @@
     }
 
     .top-module-text-div{
-        top: 20em;
+        top: 5em;
     }
 }
 
@@ -161,6 +161,10 @@
     .subhead-body-font{
         font-size: .27em;
         line-height: 5px;
+    }
+
+    .top-module-text-div{
+        top: 10em;
     }
 }
 
