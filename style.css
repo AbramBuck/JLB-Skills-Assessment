@@ -39,7 +39,7 @@ p, h1, h2, h3, h4 {
     grid-template-columns: repeat(10, 1fr); /* 10 equal-width columns */
     grid-template-areas: 
         "a a a a a a a a a a"
-        "b b b c c c c d d d"
+        "b b c c c c c c d d"
         "e e e f f f f g g g";
     gap: 0.625em;
     max-height: 940px;
@@ -49,22 +49,20 @@ p, h1, h2, h3, h4 {
 
 .top-module-text-div{
     z-index: 1;
-    position: absolute;
-    top: 350px;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    grid-area: c;
+    overflow: visible;
+    text-align: center;
 }
 
-
 .headline-font{
-    font-size: 125px;
+    font-size: clamp(50px, 8.2vw, 125px);
     font-weight: 900;
     line-height: 0px;
     letter-spacing: -4px;
 }
 
 .subhead-font{
-    font-size: 74px;
+    font-size: clamp(10px, 4.7vw, 74px);
     font-weight: 900;
     line-height: 0px;
     letter-spacing: -1.5px;
@@ -112,7 +110,7 @@ p, h1, h2, h3, h4 {
     top: 855px;
     left: 50%;
     transform: translate(-50%, -50%); */
-    z-index: 1;
+    z-index: 0;
     display: flex;
     flex-direction: column;
     gap: 0.625em;
@@ -156,6 +154,13 @@ p, h1, h2, h3, h4 {
     object-fit: cover;
 }
 
+.image-two-bg{
+    display: none;
+    z-index: 2;
+    grid-area: b;
+    width: 100%;
+    height: 100%;
+}
 
 .image3{
     grid-area: c;
@@ -167,6 +172,14 @@ p, h1, h2, h3, h4 {
 
 .image4{
     grid-area: d;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.image-five-bg{
+    display: none;
+    grid-area: e;
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -193,7 +206,7 @@ p, h1, h2, h3, h4 {
     z-index: 1;
     grid-area: f;
     width: 100%;
-    padding-top: 100px;
+    padding-top: clamp(20px, 14vw, 375px);
 }
 
 .text-div p {
@@ -209,7 +222,6 @@ p, h1, h2, h3, h4 {
     font-family: Montserrat, Arial, Helvetica, sans-serif;
     font-weight: 900;
     font-size: clamp(1.13em, 2vw, 2.13em);
-    padding-top: 150px;
     padding-bottom: 5px;
 }
 
@@ -228,20 +240,49 @@ p, h1, h2, h3, h4 {
 
 }
 
-@media screen and (max-width: 1820px){
+@media screen and (max-width: 1525px){
 
-    image5{
-        transform: translate(0,4%);
+    .bottom-grid-container{
+        grid-template-areas: 
+            "a a a b b f f f f f"
+            "c d d e e f f f f f";
     }
+
+    /* .image-five-bg{
+        display: block;
+    }
+
+    .image5{
+        display: none;
+    } */
+
+    /* .image-two-bg{
+        display: block;
+        grid-area: b;
+        height: 200%;
+        width: 100%;
+        background-size: cover;
+        background-image: url("https://res.cloudinary.com/di0fa12vz/image/upload/v1734626925/COLLAGE_IMAGE_2_hvrhjx.jpg");
+    }
+
+    .image2{
+        display: none;
+    } */
+}
+
+@media screen and (max-width: 1350px){
+
+    .subhead-body-font{
+        font-size: 18px;
+        padding-bottom: 80px;
+    }
+
+    
 
 }
 
-@media screen and (max-width: 1720px){
+@media screen and (max-width: 1280px){
 
-    image5{
-        transform: translate(0,0);
-        margin-top: -80px;
-    }
 
     
 
