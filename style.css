@@ -1,69 +1,25 @@
 .body{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     width: 100%;
     max-width: 1920px;
     margin-left: auto;
     margin-right: auto;
 }
 
-.flex-contianer{
-    display: flex;
-    max-width: 50%;
-    flex-wrap: wrap;
-    background-color: bisque;
-}
-
-.image1f{
+.top-grid-container {
+    display: grid;
+    margin-left: auto;
+    margin-right: auto;
     width: 100%;
-    height: 100%;
-    max-width: 560px;
-    max-height: 427px;
-    min-width: 265;
-    min-height: 200;
-    object-fit: contain;
-}
-
-.image2f{
-    grid-column-start: 4;
-    grid-column-end: 6;
-    grid-row: 1;
-    width: 100%;
-    height: 100%;
-    max-width: 386px;
-    max-height: 286px;
-    object-fit: cover;
-}
-
-.image3f{
-    grid-column: 1;
-    grid-row: 2;
-    width: 100%;
-    height: 100%;
-    max-width: 176px;
-    max-height: 286px;
-}
-
-.image4f{
-    grid-column: 1;
-    grid-row: 2;
-    width: 100%;
-    height: 100%;
-    max-width: 382px;
-    max-height: 286px;
-}
-
-.image5f{
-    grid-column: 1;
-    grid-row: 2;
-    width: 100%;
-    height: 100%;
-    width: 237px;
-    max-height: 177px;
-}
-
-.top-grid-container{
-   background-color: burlywood; 
+    max-width: 1920px;
+    grid-template-columns: repeat(10, 1fr); /* 10 equal-width columns */
+    grid-template-areas: 
+        "a a a a a a a a a a"
+        "b b b c c c c d d d"
+        "e e e f f f f g g g";
+    gap: 0.625em;
+    background-color: lightgray;
 }
 
 .bottom-grid-container{
@@ -71,6 +27,7 @@
     margin-left: auto;
     margin-right: auto;
     width: 100%;
+    max-width: 1920px;
     grid-template-columns: repeat(9, 1fr);
     grid-template-areas: 
         "a a a b b f f f f f"
