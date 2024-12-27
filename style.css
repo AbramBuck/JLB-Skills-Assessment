@@ -318,9 +318,48 @@ p, h1, h2, h3, h4 {
             "f f f f f"
             "g g g g g";
         gap: 0.625em;
-    
     }
 
+    .bottom-grid-container img{
+        height: fit-content;
+    }
+ /* Headline Text, Subhead Area */
+
+    .top-module-text-div{
+        z-index: 1;
+        grid-area: c;
+        overflow: visible;
+        text-align: center;
+    }
+    
+    .headline-font{
+        font-size: clamp(36px, 8.1vw, 225px);
+        font-weight: 900;
+        line-height: 0px;
+        letter-spacing: -4px;
+    }
+    
+    .subhead-font{
+        font-size: clamp(10px, 4.7vw, 74px);
+        font-weight: 900;
+        line-height: 0px;
+        letter-spacing: -1.5px;
+        padding-bottom: 0px;
+    }
+    
+    .subhead-body-font{
+        font-size: clamp(10px, 1.7vw, 20px);
+        line-height: clamp(15px, 1.5vw, 30px);
+        font-weight: 500;
+        max-width: 80% ;
+        letter-spacing: 0px;
+        text-align: center;
+        text-wrap-style: balance;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+/* Video and Image Collage Area */
     .video{
         display: none;
     }
@@ -343,9 +382,86 @@ p, h1, h2, h3, h4 {
 
     .mobile-image-two{
         display: block;
+        height: 100% !important;
     }
 
     .mobile-image-five{
         display: block;
+        height: 100% !important;
+        width: 130%;
     }
+
+    .image3{
+        height: 100% !important;
+        min-height: 100%;
+    }
+
+    .image4{
+        height: 100% !important;
+    }
+
+/* Bottom Grid Text Area*/
+
+    .rm-welcome-txt{
+        text-align: center;
+        line-height: 0px;
+        font-family: Montserrat, Arial, Helvetica, sans-serif;
+        font-weight: 900;
+        font-size: clamp(20px, 4vw, 120px);
+        padding-bottom: 5px;
+    }
+
+    .rm-skills-txt{
+        text-align: center;
+        line-height: 0px;
+        font-family: Montserrat, Arial, Helvetica, sans-serif;
+        font-weight: 900;
+        font-size: clamp(25px, 6vw, 270px);
+        padding-bottom:clamp(25px, 6vw, 55px);
+    }
+
+    .text-div{
+        z-index: 1;
+        grid-area: f;
+        width: 100%;
+        padding-top: clamp(15px, 1.5vw, 30px) !important;
+    }
+    
+    .text-div p {
+        padding-right: 40px;
+        padding-left: 40px;
+        font-size: clamp(10px, 1.7vw, 20px);
+        line-height: clamp(15px, 1.5vw, 30px);
+    }
+
+    .bg-texture{
+        z-index: 0;
+        opacity: .1;
+        grid-area: f;
+        width: 100%;
+        object-fit: cover;
+    }
+
+        /* @media screen and (max-width: 640px){
+
+    } */
+
+    @media screen and (max-width: 430px){
+        .headline-font{
+        font-size: clamp(36px, 8.1vw, 225px);
+        font-weight: 900;
+        line-height: 0px;
+        letter-spacing: -4px;
+    }
+    
+    .subhead-font{
+        font-size: clamp(10px, 4.7vw, 74px);
+        font-weight: 900;
+        line-height: 0px;
+        letter-spacing: -1.5px;
+        padding-bottom: 0px;
+    }
+    }
+
+
 }
