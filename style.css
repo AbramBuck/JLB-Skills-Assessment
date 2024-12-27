@@ -369,13 +369,18 @@ p, h1, h2, h3, h4 {
     }
 
     .mobile-video-div{
+        grid-area: f;
+        position: relative;
         display: block;
         width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        height: 10px;
     }
 
     .mobile-video{
         display: block;
-        width: 90%;
+        width: 100%;
         margin-left: auto;
         margin-right: auto;
     }
@@ -435,11 +440,12 @@ p, h1, h2, h3, h4 {
     }
 
     .bg-texture{
-        z-index: 0;
+        z-index: 1;
         opacity: .1;
-        grid-area: f;
+        grid-area: f g;
         width: 100%;
         object-fit: cover;
+
     }
 
         /* @media screen and (max-width: 640px){
