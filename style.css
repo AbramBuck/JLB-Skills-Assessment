@@ -36,10 +36,10 @@ p, h1, h2, h3, h4 {
     margin-right: auto;
     width: 100%;
     max-width: 1920px;
-    grid-template-columns: repeat(10, 1fr); /* 10 equal-width columns */
+    grid-template-columns: repeat(10, 1fr);
     grid-template-areas: 
         "a a a a a a a a a a"
-        "b b c c c c c c d d"
+        "c c c c c c c c c c"
         "e e e f f f f g g g";
     gap: 0.625em;
     max-height: 940px;
@@ -59,7 +59,6 @@ p, h1, h2, h3, h4 {
 .headline-font{
     text-align: center;
     font-size: clamp(30.8px, 5.5vw, 160px);
-    /* font-size: clamp(20px, 8vw, 125px); */
     font-weight: 900;
     line-height: 0px;
     letter-spacing: -4px;
@@ -70,7 +69,6 @@ p, h1, h2, h3, h4 {
 .subhead-font{
     text-align: center;
     font-size: clamp(28px, 3.22vw, 91px);
-    /* font-size: clamp(10px, 4.7vw, 74px); */
     max-width: 65ch;
     font-weight: 900;
     line-height: 0px;
@@ -80,7 +78,7 @@ p, h1, h2, h3, h4 {
 }
 
 .subhead-body-font{
-    width: 75%;
+    width: 39%;
     font-size: clamp(16px, 1.5vw, 20px);
     font-weight: 500;
     line-height: clamp(1.4, 1.5vw, 2.5);
@@ -204,6 +202,7 @@ p, h1, h2, h3, h4 {
 
 .text-div p {
     padding-right: 200px;
+    line-height: 1.6;
 }
 
 .rm-text-red{
@@ -229,8 +228,7 @@ p, h1, h2, h3, h4 {
 .underline
 {   
     width: 100%;
-    border-bottom:6px solid #000000; width: 100%; 
-
+    border-bottom:6px solid #000000; width: 100%;
 }
 
 /* //////////////////////////////////////// Mobile Classes Start////////////////////////////////////// */
@@ -268,6 +266,8 @@ p, h1, h2, h3, h4 {
 
 /* //////////////////////////////////////////////Mobile Classes End//////////////////////////////// */
 
+
+/* /////////////////////////////////////////////// 1525 //////////////////////////////////////////////////////////////////// */
 @media screen and (max-width: 1525px){
 
     .bottom-grid-container{
@@ -279,7 +279,7 @@ p, h1, h2, h3, h4 {
     }
 
     .text-div p {
-        padding-right: 100px;
+        line-height: 1.1;
     }
 
 }
@@ -307,10 +307,10 @@ p, h1, h2, h3, h4 {
         margin-right: auto;
         width: 100%;
         max-width: 1279px;
-        grid-template-columns: repeat(8, 1fr); /* 10 equal-width columns */
+        grid-template-columns: repeat(8, 1fr);
         grid-template-areas: 
             " a a a a a a a a "
-            " b c c c c c c d "
+            " c c c c c c c c "
             " e e f f f f g g ";
         gap: 0.625em;
         max-height: 940px;
@@ -338,7 +338,7 @@ p, h1, h2, h3, h4 {
     .bottom-grid-container img{
         height: fit-content;
     }
- /* Headline Text, Subhead Area */
+ /* ////////////////////////////////////////////// Headline Text, Subhead Area */
 
     .top-module-text-div{
         z-index: 1;
@@ -374,7 +374,7 @@ p, h1, h2, h3, h4 {
         margin-right: auto;
     } */
 
-/* Video and Image Collage Area */
+/* ///////////////////////////////////////// Video and Image Collage Area */
     .video{
         display: none;
     }
@@ -420,7 +420,7 @@ p, h1, h2, h3, h4 {
         height: 100% !important;
     }
 
-/* Bottom Grid Text Area*/
+/* /////////////////////////////////////////////// Bottom Grid Text Area*/
 
     .rm-welcome-txt{
         text-align: center;
@@ -451,7 +451,7 @@ p, h1, h2, h3, h4 {
         padding-right: 40px;
         padding-left: 40px;
         font-size: clamp(10px, 1.7vw, 20px);
-        line-height: clamp(15px, 1.5vw, 30px);
+        line-height: 1.7;
     }
 
     .bg-texture{
@@ -463,6 +463,14 @@ p, h1, h2, h3, h4 {
 
     }
 
+}
+/* /////////////////////////////////////////////// 1000 //////////////////////////////////////////////////////////////////// */
+
+@media screen and (max-width: 1000px){
+
+    /* .headline-font{
+        font-size: clamp(60px, 4vw, 125px);
+    } */
 }
 
 /* /////////////////////////////////////////////// 740 //////////////////////////////////////////////////////////////////// */
