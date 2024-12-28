@@ -55,18 +55,23 @@ p, h1, h2, h3, h4 {
 }
 
 .headline-font{
-    font-size: clamp(50px, 8.2vw, 125px);
+    text-align: center;
+    font-size: clamp(20px, 8vw, 125px);
     font-weight: 900;
     line-height: 0px;
     letter-spacing: -4px;
+    grid-area: c;
+
 }
 
 .subhead-font{
+    text-align: center;
     font-size: clamp(10px, 4.7vw, 74px);
     font-weight: 900;
     line-height: 0px;
     letter-spacing: -1.5px;
     padding-bottom: 0px;
+    grid-area: c;
 }
 
 .subhead-body-font{
@@ -333,7 +338,7 @@ p, h1, h2, h3, h4 {
     }
     
     .headline-font{
-        font-size: clamp(36px, 7vw, 225px);
+        font-size: clamp(60px, 8vw, 125px);
         font-weight: 900;
         line-height: 0px;
         letter-spacing: -4px;
@@ -448,20 +453,27 @@ p, h1, h2, h3, h4 {
 
     }
 
-        /* @media screen and (max-width: 640px){
+}
+
+    @media screen and (max-width: 740px){
+
+        .headline-font{
+            font-size: clamp(60px, 4vw, 125px);
+        }
+    }
+
+
+    /* @media screen and (max-width: 640px){
 
     } */
 
     @media screen and (max-width: 430px){
         .headline-font{
-        font-size: clamp(36px, 8.1vw, 225px);
-        font-weight: 900;
-        line-height: 0px;
-        letter-spacing: -4px;
+        font-size: clamp(10px, 22px, 30px);
     }
     
     .subhead-font{
-        font-size: clamp(10px, 4.7vw, 74px);
+        font-size: clamp(10px, 22px, 52px);
         font-weight: 900;
         line-height: 0px;
         letter-spacing: -1.5px;
