@@ -330,6 +330,7 @@ p, h1, h2, h3, h4 {
         grid-area: c;
         overflow: visible;
         text-align: center;
+        width: 100%;
     }
     
     .headline-font{
