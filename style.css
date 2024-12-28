@@ -333,7 +333,7 @@ p, h1, h2, h3, h4 {
     }
     
     .headline-font{
-        font-size: clamp(36px, 8.1vw, 225px);
+        font-size: clamp(36px, 7vw, 225px);
         font-weight: 900;
         line-height: 0px;
         letter-spacing: -4px;
