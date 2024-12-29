@@ -36,15 +36,17 @@ p, h1, h2, h3, h4 {
     margin-right: auto;
     width: 100%;
     max-width: 1920px;
+    height: 100%;
+    max-height: 1000px;
     grid-template-columns: repeat(10, 1fr);
     grid-template-areas: 
         "a a a a a a a a a a"
         "c c c c c c c c c c"
+        "d d d d d d d d d d"
         "e e e f f f f g g g";
     gap: 0.625em;
-    max-height: 940px;
     background-color: #de041c;
-    padding-bottom: 55px;
+    padding-bottom: 65px;
     align-items: start;
 }
 
@@ -53,7 +55,8 @@ p, h1, h2, h3, h4 {
     grid-area: c;
     overflow: visible;
     text-align: center;
-    padding-top:clamp(25px, 6vw, 55px);
+    padding-top:clamp(25px, 9vw, 145px);
+    padding-bottom:200px;
 }
 
 .headline-font{
@@ -81,14 +84,12 @@ p, h1, h2, h3, h4 {
     width: 60%;
     font-size: clamp(16px, 1.5vw, 20px);
     font-weight: 500;
-    line-height: clamp(1.4, 1.5vw, 2.5);
+    line-height: 1.5;
     letter-spacing: 0px;
     text-align: center;
     margin-left: auto;
     margin-right: auto;
-    padding-bottom: 20px;
 }
-
 
 .bg-image{
     z-index: 0;
@@ -96,7 +97,7 @@ p, h1, h2, h3, h4 {
     grid-row: 1 / -1;
     width: 100%;
     height: 100%;
-    max-height: 840px;
+    max-height: 1150px;
     object-fit: cover;
     margin-top: -10px;
 }
@@ -165,7 +166,7 @@ p, h1, h2, h3, h4 {
     grid-area: c;
     width: 100%;
     height: 100%;
-    min-height: 375px;
+    max-height: 398px;
     object-fit: fill;
 }
 
@@ -173,6 +174,7 @@ p, h1, h2, h3, h4 {
     grid-area: d;
     width: 100%;
     height: 100%;
+    max-height: 398px;
     object-fit: fill;
 }
 
@@ -198,6 +200,8 @@ p, h1, h2, h3, h4 {
     grid-area: f;
     width: 100%;
     padding-top: clamp(20px, 14vw, 375px);
+    padding-left: 50px;
+
 }
 
 .text-div p {
@@ -205,6 +209,7 @@ p, h1, h2, h3, h4 {
     line-height: 1.6;
 }
 
+/* rm = right module skills Assessment text area */
 .rm-text-red{
     font-weight: 700;
 }
@@ -213,7 +218,7 @@ p, h1, h2, h3, h4 {
     line-height: 0px;
     font-family: Montserrat, Arial, Helvetica, sans-serif;
     font-weight: 900;
-    font-size: clamp(1.13em, 2vw, 2.13em);
+    font-size: clamp(20px, 2vw, 35px);
     padding-bottom: 5px;
 }
 
@@ -221,14 +226,14 @@ p, h1, h2, h3, h4 {
     line-height: 0px;
     font-family: Montserrat, Arial, Helvetica, sans-serif;
     font-weight: 900;
-    font-size: clamp(2.63em, 2vw, 3.13em);
+    font-size: clamp(32px, 3.26vw, 57px);
     padding-bottom:35px;
 }
 
 .underline
 {   
-    width: 100%;
-    border-bottom:6px solid #000000; width: 100%;
+    width: 94%;
+    border-bottom:6px solid #000000;
 }
 
 /* //////////////////////////////////////// Mobile Classes Start////////////////////////////////////// */
