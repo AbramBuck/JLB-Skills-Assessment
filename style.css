@@ -62,6 +62,7 @@ p, h1, h2, h3, h4 {
 .headline-font{
     text-align: center;
     font-size: clamp(32px, 9.5vw, 170px);
+    /* font-size: clamp(33px, 5.7vw, 125px); */
     font-weight: 900;
     line-height: 0px;
     letter-spacing: -4px;
@@ -72,6 +73,7 @@ p, h1, h2, h3, h4 {
 .subhead-font{
     text-align: center;
     font-size: clamp(26px, 5.55vw, 100px);
+    /* font-size: clamp(21px, 3.3vw, 75px); */
     max-width: 65ch;
     font-weight: 900;
     line-height: 0px;
